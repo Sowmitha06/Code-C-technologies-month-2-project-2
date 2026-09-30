@@ -1,0 +1,21 @@
+:root{--bg:#0f1a24;--ink:#e6eef5;--card:#182635;--acc:#2ec4b6;--mut:#8ea3b5;--line:#ffffff1f;--font:'Sora',system-ui,sans-serif}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--font)}
+nav{display:flex;gap:6px;flex-wrap:wrap;align-items:center;padding:12px 20px;background:#0a121a;border-bottom:1px solid var(--line)}
+nav b{margin-right:auto;font-size:20px;color:var(--acc)}nav button{background:none;border:0;color:var(--ink);padding:6px 12px;cursor:pointer;font:inherit;border-radius:6px}
+nav button.on,nav button:hover{background:var(--acc);color:#04201d}
+main{max-width:1000px;margin:0 auto;padding:24px 16px}h2,h3{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.dev.on{border-color:var(--acc);box-shadow:0 0 0 1px var(--acc) inset}.dev .ic{font-size:28px}.mut{color:var(--mut);font-size:13px}
+input,select{width:100%;padding:9px;margin:4px 0 10px;border:1px solid var(--line);border-radius:8px;font:inherit;background:#0f1a24;color:var(--ink)}
+button.p{background:var(--acc);color:#04201d;border:0;padding:9px 16px;border-radius:8px;cursor:pointer;font:inherit;font-weight:700}
+button.g{background:none;color:var(--ink);border:1px solid var(--line);padding:6px 12px;border-radius:8px;cursor:pointer;font:inherit}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.sw{width:46px;height:26px;border-radius:99px;background:#ffffff33;border:0;position:relative;cursor:pointer;flex:none}
+.sw i{position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:left .15s}.sw.on{background:var(--acc)}.sw.on i{left:23px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px}.err{color:#ff8a8a}
+.stat{font-size:28px;font-weight:700}.bar{height:12px;background:#ffffff1a;border-radius:6px;overflow:hidden}.bar i{display:block;height:100%;background:var(--acc)}
+.badge{background:#e5484d;color:#fff;border-radius:99px;padding:0 7px;font-size:12px;margin-left:4px}
+.toast{position:fixed;right:16px;bottom:16px;background:var(--acc);color:#04201d;padding:12px 16px;border-radius:10px;max-width:320px;font-weight:700}
+.days label{display:inline-flex;align-items:center;gap:3px;margin-right:10px}.days input{width:auto;margin:0}
+.warn{border-left:4px solid #f5a524}
